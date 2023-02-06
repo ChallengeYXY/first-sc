@@ -33,7 +33,6 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
-
         <!--自己的模块cloud-api-commons-->
         <dependency>
             <groupId>org.example</groupId>

@@ -4,10 +4,7 @@ import com.common.Result;
 import com.entity.Student;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @BelongsProject : first-sc
@@ -17,11 +14,11 @@ import org.springframework.web.bind.annotation.RequestBody;
  * @Description :
  */
 @Component
-@FeignClient(value = "FIERST-SPRINGCLOUD-PROVIDER")//指定提供者在注册中心的服务名
+@FeignClient(value = "FIRST-SPRINGCLOUD-PROVIDER")//指定提供者在注册中心的服务名
 public interface OrderService {
-    @GetMapping("/getStudentById/{id}")
+    @GetMapping("/student/getStudentById/{id}")
     public Result<Student> getStudentById(@PathVariable(value = "id")Integer id);
 
-    @PostMapping("/addStudent")
+    @PostMapping("/student/addStudent")
     public Result addStudnet(@RequestBody Student student);
 }

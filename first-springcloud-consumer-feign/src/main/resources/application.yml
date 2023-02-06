@@ -5,7 +5,37 @@ spring:
     name: first-springcloud-consumer-feign
 eureka:
   client:
-register-with-eureka: true
-fetch-registry: true
-  service-url:
-    defaultZone: http://localhost:7001/eureka
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+
+#设置Feign客户端超时时间（openfeign默认支持ribbon）
+ribbon:
+  ReadTimeout:  3000
+  ConnectTimeout: 3000
+  MaxAutoRetries: 1 #同一台实例最大重试次数,不包括首次调用
+  MaxAutoRetriesNextServer: 1 #重试负载均衡其他的实例最大重试次数,不包括首次调用
+  OkToRetryOnAllOperations: false  #是否所有操作都重试
+#hystrix的超时时间
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 9000
+
+#feign:
+#  client:
+#    config:
+#      default: # 这里用default就是全局配置，如果是写服务名称，则是针对某个微服务的配置
+#        loggerLevel: FULL #  日志级别
+
+logging:
+  level:
+    com.service.OrderService: debug
+
+

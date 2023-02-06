@@ -12,7 +12,7 @@ import javax.annotation.Resource;
 public class OrderController {
 
 //    private final String providerURL = "http://localhost:8001";
-    private final String providerURL = "http://FIERST-SPRINGCLOUD-PROVIDER";
+    private final String providerURL = "http://FIRST-SPRINGCLOUD-PROVIDER";
 
     @Resource
     private RestTemplate restTemplate;

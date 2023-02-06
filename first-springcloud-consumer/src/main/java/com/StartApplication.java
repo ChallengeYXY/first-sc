@@ -8,7 +8,7 @@ import selfrule.MySelfRule;
 
 @SpringBootApplication
 @EnableEurekaClient
-@RibbonClient(name = "FIERST-SPRINGCLOUD-PROVIDER",configuration = MySelfRule.class)
+@RibbonClient(name = "FIRST-SPRINGCLOUD-PROVIDER",configuration = MySelfRule.class)
 public class StartApplication {
     public static void main(String[] args) {
         SpringApplication.run(StartApplication.class,args);
