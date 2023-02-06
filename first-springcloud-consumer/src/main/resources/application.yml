@@ -1,0 +1,14 @@
+server:
+  port: 80
+spring:
+  application:
+    name: fierst-springcloud-consumer
+
+
+#向注册中心注册
+eureka:
+  client:
+    register-with-eureka: true
+    fetchRegistry: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka
