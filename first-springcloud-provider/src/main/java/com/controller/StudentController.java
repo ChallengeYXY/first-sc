@@ -3,10 +3,12 @@ package com.controller;
 import com.common.Result;
 import com.entity.Student;
 import com.service.StudentService;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+
 
 @RestController
 @RequestMapping("/student")

@@ -3,9 +3,12 @@ package com.controller;
 import com.common.Result;
 import com.entity.Student;
 import com.service.OrderService;
+
+
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+
 
 /**
  * @BelongsProject : first-sc
@@ -15,17 +18,17 @@ import javax.annotation.Resource;
  * @Description :
  */
 @RestController
-@RequestMapping("/student")
+@RequestMapping("/consumer")
 public class OrderController {
     @Resource
     private OrderService orderService;
 
-    @GetMapping("/getStudentById/{id}")
+    @GetMapping("/student/getStudentById/{id}")
     public Result<Student> getStudentById(@PathVariable(value = "id")Integer id){
         return orderService.getStudentById(id);
     }
 
-    @PostMapping("/addStudent")
+    @PostMapping("/student/addStudent")
     public Result addStudnet(@RequestBody Student student){
         return orderService.addStudnet(student);
     }
