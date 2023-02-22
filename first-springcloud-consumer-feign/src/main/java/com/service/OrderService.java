@@ -21,4 +21,7 @@ public interface OrderService {
 
     @PostMapping("/student/addStudent")
     public Result addStudnet(@RequestBody Student student);
+
+    @GetMapping("/student/getStudentByIdTimeout/{id}")
+    public Result<Student> getStudentByIdTimeout(@PathVariable(value = "id")Integer id);
 }

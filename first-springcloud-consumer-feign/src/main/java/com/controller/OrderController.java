@@ -27,9 +27,13 @@ public class OrderController {
     public Result<Student> getStudentById(@PathVariable(value = "id")Integer id){
         return orderService.getStudentById(id);
     }
-
     @PostMapping("/student/addStudent")
     public Result addStudnet(@RequestBody Student student){
         return orderService.addStudnet(student);
+    }
+
+    @GetMapping("/student/getStudentByIdTimeout/{id}")
+    public Result<Student> getStudentByIdTimeout(@PathVariable(value = "id")Integer id){
+        return orderService.getStudentByIdTimeout(id);
     }
 }

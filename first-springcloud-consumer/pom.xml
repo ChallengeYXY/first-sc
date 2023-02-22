@@ -33,10 +33,10 @@
             <version>2.2.10.RELEASE</version>
         </dependency>
         <!--ribbon，新版cloud的是没有的，需要手动，但手动还会出错！说明已经停止维护-->
-        <!--<dependency>
+        <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
-        </dependency>-->
+        </dependency>
         <!--lombok-->
         <dependency>
             <groupId>org.projectlombok</groupId>
