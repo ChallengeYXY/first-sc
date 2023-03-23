@@ -1,0 +1,21 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: first-springcloudalibaba-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 #配置Nacos地址
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/firstcloud
+    username: root
+    password: 123456
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'  #默认只公开了/health和/info端点，要想暴露所有端点只需设置成星号
+

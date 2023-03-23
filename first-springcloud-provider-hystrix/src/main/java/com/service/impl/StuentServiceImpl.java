@@ -1,7 +1,6 @@
 package com.service.impl;
 
-import com.common.Result;
-import com.entity.Student;
+import com.yangxinyu.entity.Student;
 import com.mapper.StudentMapper;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;

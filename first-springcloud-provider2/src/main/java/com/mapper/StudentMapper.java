@@ -1,6 +1,6 @@
 package com.mapper;
 
-import com.entity.Student;
+import com.yangxinyu.entity.Student;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper

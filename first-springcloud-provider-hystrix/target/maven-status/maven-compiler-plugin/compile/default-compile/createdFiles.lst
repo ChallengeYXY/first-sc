@@ -1,5 +1,0 @@
-com\service\StudentService.class
-com\service\impl\StuentServiceImpl.class
-com\StartApplicationProvider.class
-com\controller\StudentController.class
-com\mapper\StudentMapper.class

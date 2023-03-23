@@ -1,7 +1,7 @@
 package com.service;
 
-import com.common.Result;
-import com.entity.Student;
+import com.yangxinyu.common.Result;
+import com.yangxinyu.entity.Student;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;

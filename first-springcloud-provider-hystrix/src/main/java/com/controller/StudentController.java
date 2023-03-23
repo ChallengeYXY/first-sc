@@ -1,9 +1,7 @@
 package com.controller;
 
-import com.common.Result;
-import com.entity.Student;
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
+import com.yangxinyu.common.Result;
+import com.yangxinyu.entity.Student;
 import com.service.StudentService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;

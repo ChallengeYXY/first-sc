@@ -1,6 +1,6 @@
 package com.service;
 
-import com.entity.Student;
+import com.yangxinyu.entity.Student;
 
 public interface StudentService {
     public Student getStudentById(Integer id);

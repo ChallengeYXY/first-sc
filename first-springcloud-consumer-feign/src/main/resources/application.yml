@@ -3,6 +3,11 @@ server:
 spring:
   application:
     name: first-springcloud-consumer-feign
+  zipkin:
+    base-url: http://localhost:9411 #zipkin的地址
+    sleuth:
+      sampler:
+        probability: 1 #采样率值介于0~1之间，1表示全部采样
 eureka:
   client:
     register-with-eureka: true

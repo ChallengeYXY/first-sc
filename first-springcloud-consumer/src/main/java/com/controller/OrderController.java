@@ -1,7 +1,7 @@
 package com.controller;
 
-import com.common.Result;
-import com.entity.Student;
+import com.yangxinyu.common.Result;
+import com.yangxinyu.entity.Student;
 
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
@@ -15,6 +15,7 @@ public class OrderController {
 
     //private final String providerURL = "http://localhost:8001";
     private final String providerURL = "http://FIRST-SPRINGCLOUD-PROVIDER";
+    //一般远程服务地址放在配置文件中
 
     @Resource
     private RestTemplate restTemplate;

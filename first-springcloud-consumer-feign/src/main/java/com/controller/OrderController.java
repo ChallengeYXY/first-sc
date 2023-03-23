@@ -1,7 +1,7 @@
 package com.controller;
 
-import com.common.Result;
-import com.entity.Student;
+import com.yangxinyu.common.Result;
+import com.yangxinyu.entity.Student;
 import com.service.OrderService;
 
 

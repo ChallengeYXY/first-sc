@@ -1,0 +1,6 @@
+# Project exclude paths
+/first-eureka-server/target/
+/first-springcloud-consumer/target/
+/first-springcloud-consumer-feign/target/
+/first-springcloud-provider/target/
+/first-springcloud-provider2/target/

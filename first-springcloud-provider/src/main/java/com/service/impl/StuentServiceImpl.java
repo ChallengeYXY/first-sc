@@ -1,6 +1,6 @@
 package com.service.impl;
 
-import com.entity.Student;
+import com.yangxinyu.entity.Student;
 import com.mapper.StudentMapper;
 import com.service.StudentService;
 
